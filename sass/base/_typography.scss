@@ -1,0 +1,55 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 10rem;
+
+    @include respond(phone) {
+        margin-bottom: 5rem;
+    }
+
+    @include respond(tab-port) {
+        margin-bottom: 7rem;
+    }
+
+    &--main {
+        display: block;
+        line-height: 6rem;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+        animation: moveInLeft 1s ease-out;
+
+        @include respond(big-desktop) {
+            font-size: 4rem;
+            width: 122%;
+            line-height: 8rem;
+            position: relative;
+            right: 5rem;        
+        }
+
+        @include respond(tab-land) {
+            font-size: 3.5rem;
+            width: 118%;
+            position: relative;
+            right: 4rem;
+            line-height: 7rem;
+        }
+
+        @include respond(tab-port) {
+            width: 143%;
+            font-size: 2.7rem;
+            line-height: 6rem;
+            position: relative;
+            right: 6rem;
+         }
+
+        @include respond(phone) {
+            font-size: 2rem;
+            width: 150%;
+            position: relative;
+            right: 6rem;
+            line-height: 4rem;
+        }
+    }
+}
